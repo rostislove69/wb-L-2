@@ -1,0 +1,107 @@
+@import url(./fonts/fonts.css);
+
+html, body {
+  max-height: 100vh;
+  background-color: black;
+  margin: 0;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  margin: auto;
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+.header_title{
+  font-family: 'Tetris';
+  font-size: 50px;
+  margin-right: 70px;
+}
+
+canvas {
+  height: 80%;
+  border: 1px solid white;
+  background-color: rgba(255,255,255,0.4);
+}
+
+.level-title{
+  margin-bottom: 0;
+  
+}
+
+.level{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.info-block{
+  margin-left: 20px;
+}
+
+.score-block{
+  width: 200px;
+}
+
+.score-title{
+  margin-bottom: 0;
+}
+
+.score{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.record-block{
+  width: 200px;
+}
+
+.record-title{
+  margin-bottom: 0;
+}
+
+.record{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.control-title{
+  margin-bottom: 0;
+}
+
+.control-text{
+  font-size: 15px;
+  font-weight: 700;
+  margin: 3px 0;
+}
+
+.new-game-button{
+  color: white;
+  width: 150px;
+  height: 130px;
+  margin-top: 87px;
+  background-color: black;
+  border: 3px white solid;
+  cursor: pointer;
+  font-family: 'Tetris';
+  font-size: 1.5em;
+}
+
+.new-game-button:hover{
+  opacity: 0.7;
+}
+
+.new-game-button:focus{
+  outline: none;
+}

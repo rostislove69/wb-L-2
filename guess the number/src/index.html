@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Угадай число</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Игра "Угадай число"</h1>
+      <div class="main-page">
+        <h2>Правила игры:</h2>
+        <p>
+          Загадывается случайное число, а ты пытаешься его угадать. 
+          Если твоя догадка неверна, я подскажу, больше или меньше загаданного числа 
+          твое предположение, и ты сможешь попробовать снова. Если угадаешь число, игра заканчивается. 
+          Для начала игры выбери диапазон чисел (обычно от 1 до 100) и нажми "Начать игру".
+        </p>
+        <input
+          type="number"
+          id="number1"
+          min="1"
+          value="1"
+          placeholder="От"
+          required
+        />
+        <input
+          type="number"
+          id="number2"
+          min="1"
+          value="100"
+          placeholder="До"
+          required
+        />
+        <button type="button" class="start-game-button">Начать игру</button>
+      </div>
+      <div class="game-page">
+        <p class="dialog">Тут будут отображаться подсказки. Для проверки числа - нажми "Проверить число".</p>
+        <input
+          type="number"
+          id="number3"
+          placeholder="Введи число"
+          required
+        />
+        <p>Количество попыток: <span class="attempts">0</span></p>
+        <button type="button" class="try-button">Проверить число</button>
+        <button type="button" class="new-game-button">Новая игра</button>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

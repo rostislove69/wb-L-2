@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Генератор мемов</title>
+    <link rel="stylesheet" href="./assets/index.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <label class="image-input-label" for="upload"
+          >Загрузить изображение</label
+        >
+        <input class="image-input" type="file" id="upload" accept="image/*" />
+      </div>
+      <div class="canvas-block">
+        <canvas class="canvas"></canvas>
+        <div class="text-field text-field_hide">
+          <div class="font-buttons-block">
+            <div class="moves-block"></div>
+            <button class="button-increase-font">Aa+</button>
+            <button class="button-decrease-font">Aa-</button>
+            <div class="moves-block"></div>
+          </div>
+          <textarea
+            class="textarea"
+            rows="1"
+            placeholder="Вводи текст"
+          ></textarea>
+          <i class="resize-handle-left">&#706;</i>
+          <i class="resize-handle-right">&#707;</i>
+        </div>
+      </div>
+      <p class="user-hint user-hint_hide">Чтобы добавить текст - кликни в любое место шаблона</p>
+      <button class="save-button save-button_hide">Сохранить</button>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Счётчик калорий</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+  </head>
+  <body class="page">
+    <header>
+      <h1>Счетчик калорий</h1>
+    </header>
+    <main class="main">
+      <header class="main-header">
+        <canvas id="canvas"></canvas>
+        <div class="main-header__total-container">
+          <p class="main-header__total-title">Употреблено калорий:</p>
+          <p class="main-header__total-text"><span class="main-header__personal-cal">0</span> / <span class="main-header__cal-limit">2000</span></p>
+          <p class="main-header__alert">Вы превысили лимит по калориям!</p>
+        </div>
+        <div class="main-header__buttons-block">
+          <button
+            class="main-header__button main-header__change-cal-button"
+            type="button"
+          >
+            Изменить количество калорий на день
+          </button>
+          <button class="main-header__button main-header__add-food-button">
+            Добавить продукт
+          </button>
+        </div>
+      </header>
+      <section class="filtr-container">
+        <input
+          type="text"
+          id="filterInput"
+          placeholder="Фильтр по названию..."
+        />
+        <button id="sortButton">Сортировать по количеству калорий</button>
+        <button id="deleteDataButton">Удалить все продукты</button>
+      </section>
+      <ul class="food-list">
+      </ul>
+    </main>
+    <div class="popup popup__change-cal">
+      <div class="popup__container">
+        <h2 class="popup__title">
+          Укажите максимальное количество потребляемых калорий в день
+        </h2>
+        <form class="popup__form">
+          <input
+            placeholder="Кол-во калорий"
+            name="maxCal"
+            class="popup__input"
+            type="number"
+            id="changeMaxCalInput"
+            required
+          />
+          <button class="popup__submit-button" type="submit">Принять</button>
+        </form>
+        <button class="popup__close-button" type="button"></button>
+      </div>
+    </div>
+    <div class="popup popup__add-food">
+      <div class="popup__container">
+        <h2 class="popup__title">Добавьте продукт:</h2>
+        <form class="popup__form">
+          <input
+            placeholder="Название продукта"
+            maxlength="20"
+            name="foodName"
+            class="popup__input"
+            type="text"
+            id="foodNameInput"
+            required
+          />
+          <input
+            placeholder="Кол-во калорий"
+            name="calQuantity"
+            class="popup__input"
+            type="number"
+            id="calQuantityInput"
+            required
+          />
+          <button class="popup__submit-button" type="submit">Добавить</button>
+        </form>
+        <button class="popup__close-button" type="button"></button>
+      </div>
+    </div>
+    <template id="template">
+      <li class="food-item">
+        <div class="food-item__info-container">
+          <p class="food-item__name"></p>
+          <p><span class="food-item__cal"></span> ккал.</p>
+        </div>
+        <button class="food-item__delete-button"></button>
+      </li>
+    </template>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

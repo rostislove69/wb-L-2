@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Тетрис</title>
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header_title">TETRIS</h1>
+  </header>
+  <main>
+    <canvas width="320" height="640" id="game"></canvas>
+    <div class="info-block">
+      <div class="level-block">
+        <h2 class="level-title">Уровень:</h2>
+        <p class="level"></p>
+      </div>
+      <div class="score-block">
+        <h2 class="score-title">Счет:</h2>
+        <p class="score"></p>
+      </div>
+      <div class="record-block">
+        <h2 class="record-title">Ваш рекорд:</h2>
+        <p class="record"></p>
+      </div>
+      <div class="control-block">
+        <h2 class="control-title">Управление:</h2>
+        <p class="control-text">&#129106; - Двигать фигуру вправо</p>
+        <p class="control-text">&#129104; - Двигать фигуру влево</p>
+        <p class="control-text">&#129105; - Повернуть фигуру</p>
+        <p class="control-text">&#129107; - Ускорить фигуру</p>
+      </div>
+      <button class="new-game-button">NEW GAME</button>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Крестики-нолики</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <h1>Крестики-нолики</h1>
+      <div class="main-menu">
+        <div class="choose-play-mode-block">
+          <button class="button-play-together">Играть вдвоем</button>
+          <button class="button-play-vs-ai">Играть против компьютера</button>
+        </div>
+        <div class="choose-ai-level-block">
+          <h2>Выбери уровень сложности:</h2>
+          <button class="button-ease-level-ai">Легкий</button>
+          <button class="button-hell-level-ai">Нереальный</button>
+        </div>
+      </div>
+      <div class="game">
+        <table>
+          <tr>
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+          </tr>
+        </table>
+        <div class="endgame">
+          <div class="text"></div>
+          <button onClick="startGame()">Новая игра</button>
+          <button class="button-to-main-menu">В главное меню</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
